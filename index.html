@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Qrious Internship Task</title>
+</head>
+<body>
+    <div class="landing-div">
+        <h1 class="heading-text">Qrious Internship Task</h1>
+        <div class="video-player-parent-div">
+            <div class="other-video-option-div" data-aos="fade-in" id="other-video-option-div-id">
+                <div class="video-opt" id="opt-1" onclick="optClick1()">
+                    <i class="fas fa-play-circle play-icon"></i>
+                    <br/>
+                    <h4 style="color: #fff; background-color: transparent;" id="opt-text-1">video 1 name</h4>
+                </div>
+                <div class="video-opt" id="opt-2" onclick="optClick2()">
+                    <i class="fas fa-play-circle play-icon"></i>
+                    <br/>
+                    <h4 style="color: #fff; background-color: transparent;" id="opt-text-2">video 2 name</h4>
+                </div>
+            </div>
+            <video id="my-video" class="video-player-class" onpause="onVideoPause()" onplay="onVideoPause()" controls preload="auto">
+                <source src="./Qrious Creative Showreel 201920_1080p.mp4" id="video-src-id" type='video/mp4'>
+            </video>    
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
